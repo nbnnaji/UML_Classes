@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_GNsVYHJQEeaDZ_j-muSF6w" name="Project1">
+  <packagedElement xmi:type="uml:Class" xmi:id="_4qO5gHLVEeaEwfPvwJL-Kg" name="Vehicle">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_WVf9oHLYEeaEwfPvwJL-Kg" name="speed" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_YhrhUHLYEeaEwfPvwJL-Kg" name="color" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_aAN74HLYEeaEwfPvwJL-Kg" name="turnLeft">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_9T0W8HLZEeaEwfPvwJL-Kg" name="leftInfo">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </ownedOperation>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_bQ8j8HLYEeaEwfPvwJL-Kg" name="Operation2">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_B5s88HLaEeaEwfPvwJL-Kg" name="rightInfo">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_1YveIHLWEeaEwfPvwJL-Kg" name="Bicycle">
+    <generalization xmi:type="uml:Generalization" xmi:id="_ChW6MHLXEeaEwfPvwJL-Kg" general="_4qO5gHLVEeaEwfPvwJL-Kg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_e2BNMHLYEeaEwfPvwJL-Kg" name="ringBell" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_fltkwHLYEeaEwfPvwJL-Kg" name="numberOfWheels" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_2YlxkHLWEeaEwfPvwJL-Kg" name="MotorVehicle">
+    <generalization xmi:type="uml:Generalization" xmi:id="_76k-AHLXEeaEwfPvwJL-Kg" general="_4qO5gHLVEeaEwfPvwJL-Kg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_jzvrcHLYEeaEwfPvwJL-Kg" name="sizeOfEngine" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_kZCw4HLYEeaEwfPvwJL-Kg" name="licensePlate" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedOperation xmi:type="uml:Operation" xmi:id="_ksvI8HLYEeaEwfPvwJL-Kg" name="turnRight">
+      <ownedParameter xmi:type="uml:Parameter" xmi:id="_recwgHLcEeaEwfPvwJL-Kg" name="rightInfo">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </ownedOperation>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_FEovQHLXEeaEwfPvwJL-Kg" name="MotorBike">
+    <generalization xmi:type="uml:Generalization" xmi:id="_NY8HwHLXEeaEwfPvwJL-Kg" general="_2YlxkHLWEeaEwfPvwJL-Kg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_lef9EHLYEeaEwfPvwJL-Kg" name="powerSize" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Class" xmi:id="_FvmX0HLXEeaEwfPvwJL-Kg" name="Car">
+    <generalization xmi:type="uml:Generalization" xmi:id="_PnRAgHLXEeaEwfPvwJL-Kg" general="_2YlxkHLWEeaEwfPvwJL-Kg"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mNvBoHLYEeaEwfPvwJL-Kg" name="year" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mVblEHLYEeaEwfPvwJL-Kg" name="horsePower" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mdO2MHLYEeaEwfPvwJL-Kg" name="sunRoof" visibility="private">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </ownedAttribute>
+  </packagedElement>
+</uml:Model>
